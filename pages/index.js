@@ -6,6 +6,9 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
+
 export default function Home() {
   return (
     <div>
@@ -33,20 +36,38 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div>
-            <h2>Saeed Khalid</h2>
-            <h3>Developer and Designer.</h3>
-            <p>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-semibold">
+              Saeed Khalid
+            </h2>
+            <h3 className="text-2xl py-2">Developer and Designer.</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
               Freelancer providing web development and design services. I have
               been working in the industry for 5 years. I have worked with
               companies like Google, Facebook, and Amazon.
             </p>
           </div>
-          <div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={deved} alt="dev ed" layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        <section className="py-20">
+          <h3 className="text-3xl py-1">Services</h3>
+          <p className="text-md py-5 leading-8 text-gray-800">
+            Since the beginning of my journey as a freelance designer and
+            developer nearly 10 years ago, I've done remote work for
+            <span className="text-teal-500"> agencies</span>,consulted for
+            <span className="text-teal-500"> startups</span>, and collaborated
+            with talented people to create digital products for both business
+            and consumer use. I'm quietly confident, naturally curious, and
+            perpetually working on improving my chops one design problem at a
+            time.
+          </p>
         </section>
       </main>
     </div>
