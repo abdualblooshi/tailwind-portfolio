@@ -73,7 +73,7 @@ export default function Home() {
               needs. Join me down below and let's get cracking!
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 text-gray-600">
+          <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-200">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
