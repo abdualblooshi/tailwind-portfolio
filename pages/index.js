@@ -8,6 +8,15 @@ import {
 
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 export default function Home() {
   return (
@@ -37,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-semibold">
+            <h2 className="text-5xl py-3 text-teal-600 font-semibold">
               Saeed Khalid
             </h2>
             <h3 className="text-2xl py-2">Developer and Designer.</h3>
@@ -56,18 +65,92 @@ export default function Home() {
             <Image src={deved} alt="dev ed" layout="fill" objectFit="cover" />
           </div>
         </section>
+
         <section className="py-20">
-          <h3 className="text-3xl py-1">Services</h3>
-          <p className="text-md py-5 leading-8 text-gray-800">
-            Since the beginning of my journey as a freelance designer and
-            developer nearly 10 years ago, I've done remote work for
-            <span className="text-teal-500"> agencies</span>,consulted for
-            <span className="text-teal-500"> startups</span>, and collaborated
-            with talented people to create digital products for both business
-            and consumer use. I'm quietly confident, naturally curious, and
-            perpetually working on improving my chops one design problem at a
-            time.
-          </p>
+          <div>
+            <h3 className="text-3xl py-1">Services</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Since the beginning of my journey as a freelance designer and
+              developer nearly 10 years ago, I've done remote work for
+              <span className="text-teal-500"> agencies</span>,consulted for
+              <span className="text-teal-500"> startups</span>, and collaborated
+              with talented people to create digital products for both business
+              and consumer use. I'm quietly confident, naturally curious, and
+              perpetually working on improving my chops one design problem at a
+              time.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer a wide range of services, including brand design,
+              programming and teaching.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} alt="design" width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited to your brand and business
+                needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} alt="design" width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
+              <p className="py-2">
+                Creating elegant designs suited to your brand and business
+                needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} alt="design" width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited to your brand and business
+                needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Since the beginning of my journey as a freelance designer and
+              developer nearly 10 years ago, I've done remote work for
+              <span className="text-teal-500"> agencies</span>,consulted for
+              <span className="text-teal-500"> startups</span>, and collaborated
+              with talented people to create digital products for both business
+              and consumer use. I'm quietly confident, naturally curious, and
+              perpetually working on improving my chops one design problem at a
+              time.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer a wide range of services, including brand design,
+              programming and teaching.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src={web1} alt="web1"  />
+            </div>
+          </div>
         </section>
       </main>
     </div>
